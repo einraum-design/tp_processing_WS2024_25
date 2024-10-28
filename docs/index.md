@@ -3,7 +3,7 @@ Kursmaterial TP Processing (p5js) Wintersemester 2024-25
 Kursdokumentation TP Processing TH|W–S FB Gestaltung  
 
 ## 18.10.2024– Einfache Formen und Farben
-- [TP 1A](https://einraum-design.github.io/tp_processing_WS2023_24/TP1/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2023_24/blob/main/docs/TP1/sketch.js)
+- [TP 1A](https://einraum-design.github.io/tp_processing_WS2024_25/TP1/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP1/sketch.js)
 
 
 ### Kommentare  
@@ -95,7 +95,7 @@ Mit noFill() und noStroke() kann auch keine Füllfarb oder keine Kontur festgele
 
 
 ## Grundstruktur setup & draw. Systemvariablen
-[TP_2](https://einraum-design.github.io/tp_processing_SoSe2024/TP_2/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_SoSe2024/blob/main/docs/TP_2/sketch.js)
+[TP_2](https://einraum-design.github.io/tp_processing_WS2024_25/TP_2/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP_2/sketch.js)
 
 
 ### function setup & draw
