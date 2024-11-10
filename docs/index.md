@@ -94,7 +94,7 @@ fill() und stroke() müssen jeweils bevor eine Form gezeichnet wird festgelegt w
 Mit noFill() und noStroke() kann auch keine Füllfarb oder keine Kontur festgelegt werden.
 
 
-## Grundstruktur setup & draw. Systemvariablen
+## 25.10.2024 Grundstruktur setup & draw. Systemvariablen
 [TP_2](https://einraum-design.github.io/tp_processing_WS2024_25/TP2/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP2/sketch.js)
 
 
@@ -145,7 +145,7 @@ random(400); // gibt eine Zahl zwischen 0 und 400 zurück
 random(200, 400); // gibt eine Zahl zwischen 200 und 400 zurück
 ```
 
-### Variablentypen & if-Bedingungen
+## 8.11.2024 Variablentypen & if-Bedingungen
 - [TP 3](https://einraum-design.github.io/tp_processing_WS2024_25/TP3/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP3/sketch.js)
 
 ***elementaren Variablen***
