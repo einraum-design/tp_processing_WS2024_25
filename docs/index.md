@@ -136,3 +136,59 @@ height -> Sketchhöhe Zahlenwert Ganzzahlen (Integer)
 width und height sollten verwendet werden, um Positionen von graphischen Elementen in der Anwendung unabhängig von der Fenstergröße zu berechnen.
 
 frameCount -> Zähler der nach jedem function draw Druchgang hochgezählt wird.  Zahlenwert Ganzzahlen (Integer)
+
+
+### Die random-Funktion
+Die Random Funktion git bei jedem Aufruf eine neue zufällige Zahl zurück.
+```
+random(400); // gibt eine Zahl zwischen 0 und 400 zurück
+random(200, 400); // gibt eine Zahl zwischen 200 und 400 zurück
+```
+
+### Variablentypen & if-Bedingungen
+- [TP 3](https://einraum-design.github.io/tp_processing_WS2024_25/TP3/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP3/sketch.js)
+
+***elementaren Variablen***
+- Ganzzahlen Integers int --> 1, 3, 34, -23
+- Fließkommazahlen FloatingPointNumbers float --> 0.234, 123.234, 1.0, -234.234
+- Boolean bool --> true / false
+- Character char --> 'a', 'b', ' ', '+', '\'' (escapen von sonderzeichen über \Sonderzeichen)
+
+***Objekte***
+- Textkette String --> "Hello World", " ", "8ohasdf"
+- p5.image (PImage) Bilder
+- p5.font (PFont) Schriften
+
+Variablen Definition in den meisten Programmiersprachen
+```
+// Typ variablenNamen ( = Wert);
+int alter = 18;
+```
+
+Variabeln Definition in p5js
+```
+let myXPos = 40.0;
+let myYPos = 60;
+let xSpeed, ySpeed;
+```
+
+if-Bedingungen 
+Mit if-Bedinungen lassen sich ein Programm steuern. 
+Über Bedingungen lässt sich steuern, welche Programmteile ausgeführt werden.
+
+```
+// if-Bedingungen
+// if(CONDITION) { wenn CONDITION erfüllt ist, wird alles im Rumpf (zwischen den {}) ausgeführt}
+if(mouseX > 300){
+    ellipse(mouseX, mouseY, 50, 50);
+}
+```
+
+Um Bedingungen zu formulieren gibt es ***Vergleichsoperatoren***
+- A > B  --> wenn A größer als B ist
+- A < B  --> wenn A kleiner als B ist
+- A >= B --> wenn A größer oder gleich B ist
+- A <= B --> wenn A kleiner oder gleich B ist
+- A == B --> wenn der Wert von A gleich B ist
+- A === B --> wenn der Wert von A gleich B ist und der Typ von A und B gleich ist
+- A != B --> wenn der Wert von A nicht gleich B ist
