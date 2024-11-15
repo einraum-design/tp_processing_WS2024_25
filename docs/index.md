@@ -192,3 +192,25 @@ Um Bedingungen zu formulieren gibt es ***Vergleichsoperatoren***
 - A == B --> wenn der Wert von A gleich B ist
 - A === B --> wenn der Wert von A gleich B ist und der Typ von A und B gleich ist
 - A != B --> wenn der Wert von A nicht gleich B ist
+
+
+## 15.11.2024 – Erweiterung if-Bedingungen
+- [TP 4](https://einraum-design.github.io/tp_processing_WS2024_25/TP4/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP4/sketch.js)
+
+m mehrere Bedingung miteinander zu verbinden gibt es ***Verknüpfungsoperatoren***
+- CONDITION_A && CONDITION_B --> Wenn Bedingung A UND Bedingung B erfüllt sind
+- CONDITION_A || CONDITION_B --> Wenn Bedingung A ODER Bedingung B (oder beide) erfüllt sind
+
+
+### If - else
+Jeder if-Bedingung kann ein else Block angehängt werden. 
+Ist die Bedingung nicht erfüllt, wird der else-Block ausgeführt.
+
+```
+if(mouseIsPressed) {
+    // wenn Maus gedrückt ist Füllfarbe rot
+    fill(255, 0, 0);
+} else {
+    // ansonsten Füllfarbe weiß
+    fill(255);
+}
