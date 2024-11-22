@@ -28,7 +28,9 @@ function draw() {
   background(220);
   // CENTER / CORNER
   imageMode(CENTER);
-  image(img, 300, 200, img.width * 0.5, img.height*0.5);
+
+  //image(img, 300, 100, 100, 50);
+  image(img, 300, 200, img.width *2, img.height*2);
 
   fill(c);
   ellipse(xPos, yPos, ballSize, ballSize);
@@ -74,6 +76,10 @@ function draw() {
     ballSize = random(5, 20);
     xSpeed = random(-10, 10);
     ySpeed = random(-10, 10);
+  } else {
+    // wenn maustaste nicht gedrückt ist 
+    // ball immer auf 3 Pixel setzen
+    ballSize = 3;
   }
 
 }
