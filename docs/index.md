@@ -216,6 +216,23 @@ if(mouseIsPressed) {
 }
 ```
 
+Zusätzlich können noch mehrere "else if" Blöcke an eine if-Bedingung angehängt werden.
+Dann werden die Bedingungen der Reihe nach gecheckt, bis eine Bedingung erfüllt ist.
+Sobald eine erfüllt ist, werden alle weitern "else if" und die "else" einfach übersprungen.
+Es wird also immer nur ein Block ausgeführt.
+
+```
+
+if(CONDITION1) {
+    // ist die erste Bedingung erfüllt wird der erste Block ausgeführt und alles weiteren Abfragen werden übersprungen
+} else if(CONDITION2) {
+    // ist die zweite Bedingung erfüllt wird der zweite Block ausgeführt und alles weiteren Abfragen werden übersprungen
+} ...
+else {
+    // wenn alle Bedingungen nicht erfüllt waren, wird der else Block ausgeführt
+}
+```
+
 ## 22. November 2024: Transformationen (verschieben, rotieren, skalieren)
 - [TP5](https://einraum-design.github.io/tp_processing_WS2024_25/TP5/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP_6.1A/sketch.js)
 - [TP5_2](https://einraum-design.github.io/tp_processing_WS2024_25/TP5_2/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP5_2/sketch.js)
@@ -246,3 +263,40 @@ Das Zeichenkoordiantensystem lässt sich innerhalb der void draw wieder auf Stan
 ```
  resetMatrix();
 ```
+
+## 29. November 2024 Arrays und Objekte
+
+### Objekte
+- [TP6](https://einraum-design.github.io/tp_processing_WS2024_25/TP6/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP_6/sketch.js)
+Objekte sind noch etwas allgemeiner gefasst. Hier sind die Schlüssel, um auf die einzelnen Werte von dem Objekt zugreifen zu können nicht festgelegt auf durchnummerierte Zahlen, sondern können jeder Begriff sein.
+Objekt werden über die geschweiften Klammern definiert:
+
+```
+ let myObject = {};
+```
+Schlüssel - Wert - Paare lassen sich einfach über den Punkt-Operator hinzufügen:
+```
+ let myObject = {}
+ myObject.name = "Otto";
+ myObject.alter = 43;
+
+ // oder über den Schlüssel als String ("") in eckigen Klammern hinzufügen:
+ myObject["sex"] = "male";
+```
+
+
+## Event Listener
+
+Soll sich der Status des Buttons auf ein Event (zB. Click) hin umschalten, muss beachtet werden, dass der Wechsel nicht innerhalb der void draw mehrfach ausgeführt wird.
+Deshalb gibt es Event Händler, die auf bestimmte Events hin jeweils einmal ausgeführt werden. Diese stehen außerhalb der function setup() und der function draw().
+```
+// wird in dem Moment aufgerufen, wenn die Maustaste gedrückt wird.
+void mousePressed() {
+    // der Inhalt im Funktionsrumpf wird pro Click einmal ausgeführt.
+}
+```
+
+Weiter Eventhandler für Maus- und TastaturEvents sind in der Referenz zu finden.
+
+
+### Arrays (nächst Woche)
