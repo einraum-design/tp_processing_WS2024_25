@@ -285,6 +285,27 @@ Schlüssel - Wert - Paare lassen sich einfach über den Punkt-Operator hinzufüg
 ```
 
 
+- [TP7](https://einraum-design.github.io/tp_processing_WS2024_25/TP7/index.html) [(--> Code)](https://github.com/einraum-design/tp_processing_WS2024_25/blob/main/docs/TP_7/sketch.js)
+
+### Arrays
+Es gibt Array, bei denen jeder Wert über einen Index (Zahl von 0 - n) als Schlüssel angesprochen werden kann.
+Arrays werden über eckige Klammern gekennzeichnet:
+
+```
+ let myArray = [];
+```
+
+Arrays mit Werten initialisieren:
+```
+ let namesArray = ["Andres", "Tina", "Philipp"];
+```
+Der Zugriff auf die Werte erfolg über die den Index in den eckigen Klammern:
+```
+ let myArray[0] = "hello"; // wert "hello" an der Stelle 0 im Array
+```
+Bei Arrays kann man über das Attribut **length** abrufen, wie viele Werte in dem Array aktuell enthalten sind.
+Mit der Methode **.push()** lassen sich neue Werte an das Array hinten anhängen.
+
 ## Event Listener
 
 Soll sich der Status des Buttons auf ein Event (zB. Click) hin umschalten, muss beachtet werden, dass der Wechsel nicht innerhalb der void draw mehrfach ausgeführt wird.
@@ -299,4 +320,17 @@ void mousePressed() {
 Weiter Eventhandler für Maus- und TastaturEvents sind in der Referenz zu finden.
 
 
-### Arrays (nächst Woche)
+
+Um Funktionen mehrfach auszuführen, gibt es unterschiedliche Schleifen Konstrukte (while-loop, do-while-loop, for-loop und for-each-loop).
+
+### WHILE-LOOP:
+
+Die while loop ist von der Syntax am einfachsten aufgebaut. 
+```
+  while (CONDITION) {
+    /* do something - Schleifenrumpf */
+  }
+```
+Die Bedingung wird überprüft - wenn die Bedingung true ist, wird der Schleifenrumpf ausgeführt.
+Anschließend wird die Bedingung erneut überprüft und der Schleifenrumpf erneut ausgeführt etc.
+Ist die Bedingung nicht erfüllt, wird die Wiederholung unterbrochen und das Programm nach der Schleife fortgesetzt.
