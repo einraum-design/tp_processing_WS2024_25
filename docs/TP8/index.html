@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meine erste Webseite</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+    <style type="text/css">
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h3 {
+        color: rgb(116, 116, 116);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      /* alles Elemente mit der class="artikel" */
+      .artikel {
+        background-color: rgb(172, 218, 255);
+        width: 300px;
+        display: inline-block;
+      }
+
+      /* alle a innerhalb eines nav tags */
+      nav a {
+        padding-right: 20px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Meine erste Webseite!</h1>
+    <h2>Willkommen im p5js Website Grundkurs</h2>
+    <nav>
+      <a href="#artikel1">Artikel 1</a>
+      <a href="#artikel2">Artikel 2</a>
+      <a href="#artikel3">Artikel 3</a>
+      <a href="#artikel4">Artikel 4</a>
+    </nav>
+    <div class="artikel" id="artikel1" style="border: solid 1px #000;">
+      <h3>Unterüberschrift 3</h3>
+      <img src="https://rp-online.de/imgs/32/1/8/0/3/7/0/1/9/tok_25dfc454c4597c3ec0b2d5535d48f58d/w940_h528_x470_y264_2dc2dae690b7f022.jpg" width="300px" />
+      <p>Ich bin eine <b>Textabsatz</b> und kann bliebig lang sein.<br />
+        dsflökjösldaf <span style="color:rgb(255, 153, 0)">ich bin in einem span Element</span> ölaksdjflkasjf lkjasdlökfj alöksdjflkasd flkjasdlkfj alksdjflköasdlkfjaslödkjflkasdjflasdlköfjlasdjfla öksdflkasdjf lkajsdflköjaslkdfj lökasdjflkasdjflkjasdlkfjalksdflkasdjflk jasdlkfjaslkdflkasdfklasdlk ffalksdflk sadjfajsdklfjaslkdjfölkas jflkasdlkfjaslkd fjlkasdjflk alsdkjflkasdjflk jasdlkfjl kasdjflk jSDF
+      </p>
+      <!-- target="_blank" öffent link in neuem Tab -->
+      <p>link zu <a href="https://www.w3schools.com" target="_blank">weiteren Informationen</a></p>
+      <!-- <video src="www.youtube.com/20347450" /> -->
+    </div>
+
+    <div class="artikel" id="artikel2" style="border: solid 1px #000;">
+      <h3>Unterüberschrift 3</h3>
+      <img src="https://rp-online.de/imgs/32/1/8/0/3/7/0/1/9/tok_25dfc454c4597c3ec0b2d5535d48f58d/w940_h528_x470_y264_2dc2dae690b7f022.jpg" width="300px" />
+      <p>Ich bin eine <b>Textabsatz</b> und kann bliebig lang sein.<br />
+        dsflökjösldaf <span style="color:rgb(255, 153, 0)">ich bin in einem span Element</span> ölaksdjflkasjf lkjasdlökfj alöksdjflkasd flkjasdlkfj alksdjflköasdlkfjaslödkjflkasdjflasdlköfjlasdjfla öksdflkasdjf lkajsdflköjaslkdfj lökasdjflkasdjflkjasdlkfjalksdflkasdjflk jasdlkfjaslkdflkasdfklasdlk ffalksdflk sadjfajsdklfjaslkdjfölkas jflkasdlkfjaslkd fjlkasdjflk alsdkjflkasdjflk jasdlkfjl kasdjflk jSDF
+      </p>
+      <!-- target="_blank" öffent link in neuem Tab -->
+      <p>link zu <a href="https://www.w3schools.com" target="_blank">weiteren Informationen</a></p>
+      <!-- <video src="www.youtube.com/20347450" /> -->
+    </div>
+
+    <div class="artikel" id="artikel3" style="border: solid 1px #000;">
+      <h3>Unterüberschrift 3</h3>
+      <img src="https://rp-online.de/imgs/32/1/8/0/3/7/0/1/9/tok_25dfc454c4597c3ec0b2d5535d48f58d/w940_h528_x470_y264_2dc2dae690b7f022.jpg" width="300px" />
+      <p>Ich bin eine <b>Textabsatz</b> und kann bliebig lang sein.<br />
+        dsflökjösldaf <span style="color:rgb(255, 153, 0)">ich bin in einem span Element</span> ölaksdjflkasjf lkjasdlökfj alöksdjflkasd flkjasdlkfj alksdjflköasdlkfjaslödkjflkasdjflasdlköfjlasdjfla öksdflkasdjf lkajsdflköjaslkdfj lökasdjflkasdjflkjasdlkfjalksdflkasdjflk jasdlkfjaslkdflkasdfklasdlk ffalksdflk sadjfajsdklfjaslkdjfölkas jflkasdlkfjaslkd fjlkasdjflk alsdkjflkasdjflk jasdlkfjl kasdjflk jSDF
+      </p>
+      <!-- target="_blank" öffent link in neuem Tab -->
+      <p>link zu <a href="https://www.w3schools.com" target="_blank">weiteren Informationen</a></p>
+      <!-- <video src="www.youtube.com/20347450" /> -->
+    </div>
+
+    <div class="artikel" id="artikel4" style="border: solid 1px #000;">
+      <h3>Artikel 4</h3>
+      <img src="https://rp-online.de/imgs/32/1/8/0/3/7/0/1/9/tok_25dfc454c4597c3ec0b2d5535d48f58d/w940_h528_x470_y264_2dc2dae690b7f022.jpg" width="300px" />
+      <p>Ich bin eine <b>Textabsatz</b> und kann bliebig lang sein.<br />
+        dsflökjösldaf <span style="color:rgb(255, 153, 0)">ich bin in einem span Element</span> ölaksdjflkasjf lkjasdlökfj alöksdjflkasd flkjasdlkfj alksdjflköasdlkfjaslödkjflkasdjflasdlköfjlasdjfla öksdflkasdjf lkajsdflköjaslkdfj lökasdjflkasdjflkjasdlkfjalksdflkasdjflk jasdlkfjaslkdflkasdfklasdlk ffalksdflk sadjfajsdklfjaslkdjfölkas jflkasdlkfjaslkd fjlkasdjflk alsdkjflkasdjflk jasdlkfjl kasdjflk jSDF
+      </p>
+      <!-- target="_blank" öffent link in neuem Tab -->
+      <p>link zu <a href="https://www.w3schools.com" target="_blank">weiteren Informationen</a></p>
+      <!-- <video src="www.youtube.com/20347450" /> -->
+    </div>
+
+    <div><a href="impressum.html">IMPRESSUM</a></div>
+
+
+    <!-- Kommentar in HTML -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
