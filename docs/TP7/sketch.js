@@ -2,6 +2,25 @@
 // leeres Array
 let names = [];
 
+let auto = {
+  ps: 68,
+  motor: {
+    baureihe: 23923,
+    id: 2098,
+  },
+  farbe: "rot",
+  baujahr: 1992,
+  controlltermine: 
+    [
+      1994/4/21,
+      1996/5/3,
+      1998/3/23,
+      //...
+    ],
+}
+
+// auto.ps -> enthält 68 
+
 
 // array mit Werten:
 let teilnehmer = ["Paul", "Tina", "Stefan", "Luise", "Tom", "Kevin", "Stefanie"];
@@ -35,7 +54,7 @@ function draw() {
     // INCREMENTOR
     counter = counter + 1;
   }
-
+  
 
 
 }
